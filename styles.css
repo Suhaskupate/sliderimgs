@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.slider {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 33.33%;
+    /* 3 slides visible at a time */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
